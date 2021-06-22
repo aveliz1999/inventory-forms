@@ -1,4 +1,4 @@
-export type QuestionType = 'YesNo'
+export type QuestionType = 'YesNo' | 'ShortAnswer'
 
 export interface Question {
     type: QuestionType,

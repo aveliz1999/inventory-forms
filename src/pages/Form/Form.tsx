@@ -2,9 +2,14 @@ import {Question} from "../../types/QuestionTypes";
 import {useState} from "react";
 import YesNoQuestion from "../../components/YesNoQuestion/YesNoQuestion";
 import styles from "./Form.module.css";
+import ShortAnswerQuestion from "../../components/ShortAnswerQuestion/ShortAnswerQuestion";
 
 // TODO Replace with API request to backend
 const questions: Question[] = [
+    {
+      type: 'ShortAnswer',
+      prompt: 'What is your quest?'
+    },
     {
         type: 'YesNo',
         prompt: 'Has keyboard?'
@@ -28,6 +33,8 @@ export default function Form() {
         switch(question.type) {
             case "YesNo":
                 return <YesNoQuestion prompt={question.prompt} onSelect={answerQuestion}/>
+            case "ShortAnswer":
+                return <ShortAnswerQuestion prompt={question.prompt} onConfirm={answerQuestion}/>
             default:
                 return <div></div>
         }
