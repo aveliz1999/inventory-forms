@@ -1,0 +1,56 @@
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #4b5bf1;
+}
+
+.error {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    background-color: #f8d7da;
+    text-align: center;
+    border-radius: 8px;
+    font: 3vh Arial;
+}
+
+.emailWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+}
+
+.input {
+    height: 5vh;
+    font-size: 4vh;
+    width: calc(100% - 8px);
+    text-align: center;
+    margin-bottom: 1vh;
+    border: none;
+}
+
+.emailDomain {
+    height: 5vh;
+    font-size: 4vh;
+    text-align: center;
+    margin-bottom: 1vh;
+    outline: none;
+    pointer-events:none;
+    border: none;
+    tab-index: -1;
+}
+
+.loginButton {
+    height: 5vh;
+    font-size: 4vh;
+    width: 100%;
+    text-align: center;
+    border: none;
+}
